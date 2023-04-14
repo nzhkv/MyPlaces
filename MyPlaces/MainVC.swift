@@ -9,7 +9,9 @@ import UIKit
 
 class MainVC: UITableViewController {
     
-    let restorauntName = ["McDonalds", "ChaCha Time", "Back Door", "Black sea"]
+//    let restorauntName = ["McDonalds", "ChaCha Time", "Back Door", "Black sea"]
+    
+    let places = [Place(name: "McDonalds", location: "Square", type: "FastFood", image: "McDonalds")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +20,14 @@ class MainVC: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restorauntName.count
+        return places.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
-        cell.nameLabel.text = restorauntName[indexPath.row]
+        cell.nameLabel.text = places[indexPath.row].name
+        cell.locationLabel.text = places[indexPath.row].location
+        cell.typeLabel.text = places[indexPath.row].type
 //        var content = cell.defaultContentConfiguration()
 //        content.nameLabel = restorauntName[indexPath.row]
         
@@ -31,9 +35,6 @@ class MainVC: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        85
-    }
 
     /*
     // MARK: - Navigation
@@ -44,5 +45,7 @@ class MainVC: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func cancelBtn(_ segue: UIStoryboardSegue) {}
 
 }
