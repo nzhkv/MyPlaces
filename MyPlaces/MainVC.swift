@@ -22,11 +22,12 @@ class MainVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = restorauntName[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
+        cell.nameLabel.text = restorauntName[indexPath.row]
+//        var content = cell.defaultContentConfiguration()
+//        content.nameLabel = restorauntName[indexPath.row]
         
-        cell.contentConfiguration = content
+//        cell.contentConfiguration = content
         return cell
     }
     
