@@ -93,7 +93,7 @@
         <!--New place-->
         <scene sceneID="2V8-Qk-kfj">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="uE7-69-cvn" customClass="NewPlaceTableVC" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="uE7-69-cvn" customClass="NewPlaceTableVC" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Qxo-wZ-6F5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
