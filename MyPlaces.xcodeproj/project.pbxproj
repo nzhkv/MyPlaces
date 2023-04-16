@@ -15,6 +15,7 @@
 		2EC1B60429E6E81800A21939 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1B60329E6E81800A21939 /* MainVC.swift */; };
 		2EC1B60629E940C500A21939 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1B60529E940C500A21939 /* CustomTableViewCell.swift */; };
 		2EC1B60829E94E1A00A21939 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1B60729E94E1A00A21939 /* PlaceModel.swift */; };
+		2EC1B60A29EC027900A21939 /* NewPlaceTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1B60929EC027900A21939 /* NewPlaceTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2EC1B60329E6E81800A21939 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2EC1B60529E940C500A21939 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2EC1B60729E94E1A00A21939 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		2EC1B60929EC027900A21939 /* NewPlaceTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2EC1B5EF29E6E36600A21939 /* AppDelegate.swift */,
 				2EC1B60329E6E81800A21939 /* MainVC.swift */,
 				2EC1B60729E94E1A00A21939 /* PlaceModel.swift */,
+				2EC1B60929EC027900A21939 /* NewPlaceTableVC.swift */,
 				2EC1B60529E940C500A21939 /* CustomTableViewCell.swift */,
 				2EC1B5F129E6E36600A21939 /* SceneDelegate.swift */,
 				2EC1B5F529E6E36600A21939 /* Main.storyboard */,
@@ -148,6 +151,7 @@
 				2EC1B60429E6E81800A21939 /* MainVC.swift in Sources */,
 				2EC1B60829E94E1A00A21939 /* PlaceModel.swift in Sources */,
 				2EC1B60629E940C500A21939 /* CustomTableViewCell.swift in Sources */,
+				2EC1B60A29EC027900A21939 /* NewPlaceTableVC.swift in Sources */,
 				2EC1B5F229E6E36600A21939 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
