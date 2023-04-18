@@ -66,7 +66,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageOfPlace" destination="YO2-XQ-kUE" id="jRX-5p-emj"/>
+                                    <outlet property="imageOfPlace" destination="5zV-Me-3Xf" id="XEH-jS-XC5"/>
                                     <outlet property="locationLabel" destination="7Qd-Hp-o0D" id="Q15-7J-DVy"/>
                                     <outlet property="nameLabel" destination="5Wi-c7-Kbb" id="vFd-cd-YJQ"/>
                                     <outlet property="typeLabel" destination="jhq-ka-Zca" id="Mh5-sE-ed2"/>
@@ -229,13 +229,21 @@
                     <navigationItem key="navigationItem" title="New place" id="bmE-y8-GgG">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="SBe-fN-z9l">
                             <connections>
-                                <segue destination="ABW-8m-h5H" kind="unwind" unwindAction="cancelBtn:" id="CLk-Y4-3Ib"/>
+                                <action selector="cancelAction:" destination="uE7-69-cvn" id="Era-mL-iSW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6tn-vy-O2J"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6tn-vy-O2J">
+                            <connections>
+                                <segue destination="ABW-8m-h5H" kind="unwind" unwindAction="unwindSegue:" id="15R-01-eEn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageOfPlace" destination="Ux7-vS-H9G" id="DSY-ng-HVQ"/>
+                        <outlet property="location" destination="kBz-GM-xQe" id="Qem-Si-FiH"/>
+                        <outlet property="placeName" destination="LYp-zk-VNV" id="2Z3-Lh-jJB"/>
+                        <outlet property="saveBtn" destination="6tn-vy-O2J" id="TRI-Tc-wzE"/>
+                        <outlet property="type" destination="zla-XQ-fCQ" id="Ijk-ul-zmh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdZ-4U-jCo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
