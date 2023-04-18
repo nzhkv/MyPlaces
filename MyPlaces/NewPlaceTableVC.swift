@@ -16,6 +16,8 @@ class NewPlaceTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
+            let cameraIcon = UIImage(named: "camera")
+            let photoIcon = UIImage(named: "photo")
             let alertSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             let camera = UIAlertAction(title: "Camera", style: .default) { _ in
                 self.chooseImagePicker(sourse: .camera)
@@ -23,6 +25,10 @@ class NewPlaceTableVC: UITableViewController {
             let photo = UIAlertAction(title: "Photo", style: .default) { _ in
                 self.chooseImagePicker(sourse: .photoLibrary)
             }
+            camera.setValue(cameraIcon, forKey: "image")
+            camera.setValue(CATextLayerAlignmentMode.left, forKey: "titleTextAlignment")
+            photo.setValue(photoIcon, forKey: "image")
+            photo.setValue(CATextLayerAlignmentMode.left, forKey: "titleTextAlignment")
             let cancel = UIAlertAction(title: "Cancel", style: .cancel)
             alertSheet.addAction(camera)
             alertSheet.addAction(photo)
