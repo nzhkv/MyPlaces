@@ -9,7 +9,7 @@ import UIKit
 
 class NewPlaceTableVC: UITableViewController {
     
-    var newPlace: Place?
+    var newPlace = Place()
     var imageIsChanged = false
 
     @IBOutlet weak var saveBtn: UIBarButtonItem!
@@ -20,6 +20,9 @@ class NewPlaceTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        DispatchQueue.main.async {
+            self.newPlace.savePlaces()
+        }
         saveBtn.isEnabled = false
         placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
@@ -49,19 +52,19 @@ class NewPlaceTableVC: UITableViewController {
         }
     }
     
-    func saveNewPlace() {
-        var image: UIImage?
-        if imageIsChanged {
-            image = imageOfPlace.image
-        } else {
-            image = UIImage(named: "imagePlaceholder")
-        }
-        newPlace = Place(name: placeName.text!,
-                         location: location.text,
-                         type: type.text,
-                         image: image,
-                         restImage: nil)
-    }
+//    func saveNewPlace() {
+//        var image: UIImage?
+//        if imageIsChanged {
+//            image = imageOfPlace.image
+//        } else {
+//            image = UIImage(named: "imagePlaceholder")
+//        }
+//        newPlace = Place(name: placeName.text!,
+//                         location: location.text,
+//                         type: type.text,
+//                         image: image,
+//                         restImage: nil)
+//    }
     
     @IBAction func cancelAction(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
