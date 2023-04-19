@@ -11,7 +11,7 @@ class MainVC: UITableViewController {
     
 //    let restorauntName = ["McDonalds", "ChaCha Time", "Back Door", "Black sea"]
     
-    var places = [Place(name: "McDonalds", location: "Square", type: "FastFood", image: nil, restImage: "McDonalds")]
+//    var places = [Place]
 
     override func viewDidLoad() {
         super.viewDidLoad()
